@@ -11,6 +11,18 @@ import lombok.Data;
 @Table(name = "CLASSROOM")
 public class Classroom {
 
+    public Classroom(int id, String name, Integer code, Integer teacherId) {
+        super();
+        this.code = code;
+        this.teacherId = teacherId;
+        this.name = name;
+        this.id = id;
+    }
+
+    public Classroom() {
+        super();
+    }
+
     @Id
     @Column
     private int id;
